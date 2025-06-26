@@ -1,0 +1,46 @@
+[{
+  "type": "achievement",
+  "title": "ICPC Gwalior-Pune Regional 2020",
+  "shortDescription": "Secured Rank 265 in prestigious ICPC regional round",
+  "image": "https://icpc.global/Images/ICPC-logo.png",
+  "tags": ["ICPC", "Competitive Programming"],
+  "time": "Dec 2020",
+  "link": "https://icpc.global"
+},
+{
+  "type": "achievement",
+  "title": "5⭐ on CodeChef",
+  "shortDescription": "Achieved 5-star rating through consistent performance",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/CodeChef_logo.svg",
+  "tags": ["CodeChef", "DSA"],
+  "time": "May 2021",
+  "link": "https://www.codechef.com/users/yourusername"
+},
+{
+  "type": "achievement",
+  "title": "Specialist on Codeforces",
+  "shortDescription": "Reached Specialist rank on Codeforces platform",
+  "image": "https://sta.codeforces.com/s/26436/images/codeforces-logo-with-telegram.png",
+  "tags": ["Codeforces", "Problem Solving"],
+  "time": "2021",
+  "link": "https://codeforces.com"
+},
+{
+  "type": "achievement",
+  "title": "Histainability App Shortlisted",
+  "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+  "image": "https://hackofpi.tech/static/media/hackofpi.a6fbc293.png",
+  "tags": ["App Development", "Hackathon"],
+  "time": "Sep 2021",
+  "link": "https://github.com/Anand1310/histainability"
+},
+{
+  "type": "achievement",
+  "title": "CodeChef Long Challenge Rank 1",
+  "shortDescription": "Ranked 1st in CodeChef Long Challenge - May 2021",
+  "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/CodeChef_logo.svg",
+  "tags": ["Coding Contest", "Ranking"],
+  "time": "May 2021",
+  "link": "https://www.codechef.com"
+}
+]

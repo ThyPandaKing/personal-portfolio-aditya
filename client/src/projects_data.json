@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Code Vision",
+    "shortDescription": "VS Code extension for blind programmers to navigate code using keyboard.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
+    "tags": ["Accessibility", "VSCode", "Python"],
+    "impact": "Improved code accessibility for visually impaired users.",
+    "details": "Parses entire folder structure and provides key-based navigation. Identifies Python constructs like classes, functions, variables, and loops. Also reports syntax errors via audio feedback.",
+    "guide": "Dr. Sridhar Chimalakonda",
+    "github": "https://github.com/AMITKESARI2000/codeVision",
+    "link": "https://github.com/AMITKESARI2000/codeVision",
+    "time": "Mar 2022 – May 2022"
+  },
+  {
+    "title": "Meet Your Dronacharya",
+    "shortDescription": "Career guidance platform built using MERN stack.",
+    "image": "https://graffersid.com/wp-content/uploads/2023/08/MERN-Stack-scaled.webp",
+    "tags": ["Web Development", "Career", "MERN", "Socket.io"],
+    "impact": "Helped students find relevant career advice and resources.",
+    "details": "Connects users with experts for career conversations. Includes chat, login/signup with Google, spam detection, and exam resources.",
+    "guide": "Dr. Sridhar Chimalakonda",
+    "github": "https://github.com/PandaKing9660/MeetYourDronacharya",
+    "link": "https://meetyourdronacharya.netlify.app/",
+    "time": "Sep 2021 – Dec 2021"
+  },
+  {
+    "title": "Helping Nemo",
+    "shortDescription": "Unity-based game to spread awareness about water pollution.",
+    "image": "https://logos-world.net/wp-content/uploads/2023/01/Unity-Emblem.png",
+    "tags": ["Game Development", "Unity", "C#"],
+    "impact": "Educated users about water pollution through interactive gameplay.",
+    "details": "Player controls a ship to clean garbage, rescue animals, and collect oil spills. Features both Survival and Story modes.",
+    "guide": "Dr. Sridhar Chimalakonda",
+    "github": "https://github.com/emanisowmya/Helping-Nemo",
+    "link": "https://github.com/emanisowmya/Helping-Nemo",
+    "time": "Jan 2022 – Feb 2022"
+  },
+  {
+    "title": "UwU Compiler",
+    "shortDescription": "Compiler built from scratch using Lex and Yacc.",
+    "image": "https://cdn-icons-png.flaticon.com/512/10838/10838407.png",
+    "tags": ["Compiler", "Lex/Yacc", "IR Code", "TAC"],
+    "impact": "Built a working compiler with full semantic and intermediate code generation.",
+    "details": "Implements lexical, syntax, and semantic analysis with symbol tables, IR code, TAC optimization, and pre-processing.",
+    "guide": "Dr. Venkata Ramana Badarla",
+    "github": "https://github.com/AMITKESARI2000/UwU_Compiler",
+    "link": "https://github.com/AMITKESARI2000/UwU_Compiler",
+    "time": "Jan 2022 – May 2022"
+  },
+  {
+    "title": "Histainability",
+    "shortDescription": "Android app to educate students about SDGs using history and quizzes.",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrPkUqEmN6ipJFp1f_gEDZtA8tVvsqdgGt1g&s",
+    "tags": ["Android", "Kotlin", "SDG", "Education"],
+    "impact": "Shortlisted in Hack of PI Hackathon by PAN IIT.",
+    "details": "Uses Google N-Grams to track SDG discussion trends over time. Includes quizzes and learning modules for students.",
+    "guide": "Dr. Sridhar Chimalakonda",
+    "github": "https://github.com/Anand1310/histainability",
+    "link": "https://github.com/Anand1310/histainability",
+    "time": "Aug 2021 – Sep 2021"
+  },
+  {
+    "title": "Bytify",
+    "shortDescription": "Python simulator for MIPS architecture with visual pipeline analysis.",
+    "image": "https://www.sigarch.org/wp-content/uploads/2017/03/Welcome.jpg",
+    "tags": ["Simulator", "Python", "MIPS", "Computer Architecture"],
+    "impact": "Helps students understand MIPS pipeline and caching visually.",
+    "details": "Supports editing, testing MIPS code, and provides cache/pipeline diagrams for better understanding.",
+    "guide": "Dr. Raghavendra Kanakagiri",
+    "github": "https://github.com/PandaKing9660/Bytify",
+    "link": "https://github.com/PandaKing9660/Bytify",
+    "time": "Jan 2021 – Apr 2021"
+  },
+  {
+    "title": "Hostel Seva",
+    "shortDescription": "Web app for hostel food ordering and complaint management.",
+    "image": "https://graffersid.com/wp-content/uploads/2023/08/MERN-Stack-scaled.webp",
+    "tags": ["Web Development", "MERN", "Auth", "Forms"],
+    "impact": "Streamlined food ordering and issue tracking for hostel residents.",
+    "details": "Allows users to place orders, file complaints, and authenticate securely using MERN stack.",
+    "guide": "",
+    "github": "https://github.com/PandaKing9660/hostel-seva",
+    "link": "https://github.com/PandaKing9660/hostel-seva",
+    "time": "Apr 2021 – Jun 2021"
+  },
+  {
+    "title": "Soil Informer",
+    "shortDescription": "Web tool to help farmers analyze soil conditions with visual aids.",
+    "image": "https://graffersid.com/wp-content/uploads/2023/08/MERN-Stack-scaled.webp",
+    "tags": ["Web", "Farming", "MERN", "Education"],
+    "impact": "Helped farmers understand soil health with gamified tools.",
+    "details": "Provides soil insights using educational games, memes, and blog articles to make the experience interactive.",
+    "guide": "",
+    "github": "https://amitkesari2000.github.io/eco-project-front/#/home",
+    "link": "https://amitkesari2000.github.io/eco-project-front/#/home",
+    "time": "Sep 2020 – Nov 2020"
+  }
+]
