@@ -1,46 +1,75 @@
-[{
-  "type": "achievement",
-  "title": "ICPC Gwalior-Pune Regional 2020",
-  "shortDescription": "Secured Rank 265 in prestigious ICPC regional round",
-  "image": "https://icpc.global/Images/ICPC-logo.png",
-  "tags": ["ICPC", "Competitive Programming"],
-  "time": "Dec 2020",
-  "link": "https://icpc.global"
-},
-{
-  "type": "achievement",
-  "title": "5⭐ on CodeChef",
-  "shortDescription": "Achieved 5-star rating through consistent performance",
-  "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/CodeChef_logo.svg",
-  "tags": ["CodeChef", "DSA"],
-  "time": "May 2021",
-  "link": "https://www.codechef.com/users/yourusername"
-},
-{
-  "type": "achievement",
-  "title": "Specialist on Codeforces",
-  "shortDescription": "Reached Specialist rank on Codeforces platform",
-  "image": "https://sta.codeforces.com/s/26436/images/codeforces-logo-with-telegram.png",
-  "tags": ["Codeforces", "Problem Solving"],
-  "time": "2021",
-  "link": "https://codeforces.com"
-},
-{
-  "type": "achievement",
-  "title": "Histainability App Shortlisted",
-  "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
-  "image": "https://hackofpi.tech/static/media/hackofpi.a6fbc293.png",
-  "tags": ["App Development", "Hackathon"],
-  "time": "Sep 2021",
-  "link": "https://github.com/Anand1310/histainability"
-},
-{
-  "type": "achievement",
-  "title": "CodeChef Long Challenge Rank 1",
-  "shortDescription": "Ranked 1st in CodeChef Long Challenge - May 2021",
-  "image": "https://upload.wikimedia.org/wikipedia/en/7/7e/CodeChef_logo.svg",
-  "tags": ["Coding Contest", "Ranking"],
-  "time": "May 2021",
-  "link": "https://www.codechef.com"
-}
+[
+  {
+    "type": "achievement",
+    "title": "ICPC Gwalior-Pune Regional 2020",
+    "shortDescription": "Secured Rank 265 in prestigious ICPC regional round",
+    "image": "https://icpc.global/regionals/abouticpc/foundationlogo.png",
+    "tags": ["ICPC", "Competitive Programming"],
+    "time": "Dec 2020",
+    "link": "https://icpc.global"
+  },
+  {
+    "type": "achievement",
+    "title": "5⭐ on CodeChef",
+    "shortDescription": "Achieved 5-star rating through consistent performance",
+    "image": "https://images.crunchbase.com/image/upload/c_pad,h_256,w_256,f_auto,q_auto:eco,dpr_1/zruiknbedz8yqafxbazb",
+    "tags": ["CodeChef", "DSA"],
+    "time": "May 2021",
+    "link": "https://www.codechef.com/users/yourusername"
+  },
+  {
+    "type": "achievement",
+    "title": "Specialist on Codeforces",
+    "shortDescription": "Reached Specialist rank on Codeforces platform",
+    "image": "https://media2.dev.to/dynamic/image/width=1080,height=1080,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fuploads%2Farticles%2Fcer3l19eex0wy900b101.jpg",
+    "tags": ["Codeforces", "Problem Solving"],
+    "time": "2021",
+    "link": "https://codeforces.com"
+  },
+  {
+    "type": "achievement",
+    "title": "Histainability App Shortlisted",
+    "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+    "image": "https://uc.hackerearth.com/he-s3-ap-south-1/media/cache/63/4e/634ed8764ea241da094f12ce8288697c.png",
+    "tags": ["App Development", "Hackathon"],
+    "time": "Sep 2021",
+    "link": "https://github.com/Anand1310/histainability"
+  },
+  {
+    "type": "achievement",
+    "title": "Servicenow Certified System Admin | CSA",
+    "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+    "image": "https://static.wixstatic.com/media/4687c2_9c93517a8ff14d2a8771e337b52a6e96~mv2.png/v1/fit/w_500,h_500,q_90/file.png",
+    "tags": ["Cloud", "Certification"],
+    "time": "Sep 2021",
+    "link": "https://github.com/Anand1310/histainability"
+  },
+
+  {
+    "type": "achievement",
+    "title": "ServiceNow Certified Implementation Specialist - Risk and Compliance",
+    "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi9azji1P3eHGE-4K5f_uogVJk8glXpar_cg&s",
+    "tags": ["Cloud", "Certification"],
+    "time": "Sep 2021",
+    "link": "https://github.com/Anand1310/histainability"
+  },
+  {
+    "type": "achievement",
+    "title": "Azure Foundation | Az-900",
+    "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+    "image": "https://img-c.udemycdn.com/open-badges/v2/badge-class/1461449489/image193214236496861289.png",
+    "tags": ["Cloud", "Certification"],
+    "time": "Sep 2021",
+    "link": "https://github.com/Anand1310/histainability"
+  },
+  {
+    "type": "achievement",
+    "title": "ServiceNow Certified Application Developer | CAD",
+    "shortDescription": "App shortlisted in Hack of PI Hackathon by PAN IIT",
+    "image": "https://frontend.ciat.edu/assets/images/certifications/sncad.webp",
+    "tags": ["Cloud", "Certification"],
+    "time": "Sep 2021",
+    "link": "https://github.com/Anand1310/histainability"
+  }
 ]

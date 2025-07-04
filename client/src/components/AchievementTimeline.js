@@ -17,7 +17,7 @@ export default function AchievementTimeline({ achievements }) {
           transform: "translateX(-50%)",
           zIndex: 1,
 
-          backgroundColor: colors.primary,
+          backgroundColor: colors.secondary,
         }}
       ></div>
 
@@ -29,7 +29,7 @@ export default function AchievementTimeline({ achievements }) {
           position: "absolute",
           top: 0,
           left: "20px",
-          backgroundColor: colors.primary,
+          backgroundColor: colors.secondary,
           zIndex: 1,
         }}
       ></div>

@@ -1,5 +1,10 @@
 {
-  "primary": "#F98866",
-  "secondary": "#A1BE95",
-  "font":"#31473A"
+  "primary": "#0b0c10",
+  "secondary": "#1f2833",
+  "background": "#c5c6c7",
+  "cardBackground": "#1f2833",
+  "font":"#45a29e",
+  "whiteFont": "#ffffff",
+  "cardBackground1": "#45a29e",
+  "highlightFont": "#66fcf1"
 }

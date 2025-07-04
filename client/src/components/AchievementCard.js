@@ -16,21 +16,41 @@ export default function AchievementCard({ achievement, index }) {
             ref={ref}
             className="card shadow-sm p-3 d-flex align-items-center flex-row"
             initial={{ opacity: 0, x: -100 }}
+            whileHover={{
+              color: colors.highlightFont,
+              textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
+              transition: { duration: 0.3 },
+            }}
             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -100 }}
             transition={{ duration: 0.6 }}
-            style={{ width: "90%" }}
+            style={{
+              width: "90%",
+              color: colors.font,
+              backgroundColor: colors.cardBackground,
+            }}
           >
             <img
               src={achievement.image}
               alt={achievement.title}
-              style={{ width: "60px", marginRight: "15px" }}
+              style={{
+                width: "60px",
+                marginRight: "15px",
+                backgroundColor: "white",
+              }}
               className="me-3"
             />
-            <div>
+            <div style={{ width: "100%" }}>
               <h6 className="mb-1 fw-semibold">{achievement.title}</h6>
-              <p className="mb-2 text-muted small">
-                {achievement.shortDescription}
-              </p>
+              <div
+                className="d-flex"
+                style={{
+                  color: colors.whiteFont,
+                  justifyContent: "space-between",
+                }}
+              >
+                <p className="mb-2 small">{achievement.shortDescription}</p>
+                <p className="mb-2 small">{achievement.time}</p>
+              </div>
               <div className="d-flex flex-wrap gap-2">
                 {achievement.tags?.map((tag, idx) => (
                   <span key={idx} className="badge bg-secondary text-light">
@@ -54,7 +74,7 @@ export default function AchievementCard({ achievement, index }) {
             borderRadius: "50%",
             marginTop: "35px",
             zIndex: 10,
-            backgroundColor: colors.primary
+            backgroundColor: colors.primary,
           }}
         />
       </div>
@@ -66,21 +86,41 @@ export default function AchievementCard({ achievement, index }) {
             ref={ref}
             className="card shadow-sm p-3 d-flex flex-column flex-md-row align-items-start align-items-md-center"
             initial={{ opacity: 0, x: 100 }}
+            whileHover={{
+              color: colors.highlightFont,
+              textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
+              transition: { duration: 0.3 },
+            }}
             animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
             transition={{ duration: 0.6 }}
-            style={{ width: "90%" }}
+            style={{
+              width: "90%",
+              color: colors.font,
+              backgroundColor: colors.cardBackground,
+            }}
           >
             <img
               src={achievement.image}
               alt={achievement.title}
-              style={{ width: "60px", marginRight: "15px" }}
+              style={{
+                width: "60px",
+                marginRight: "15px",
+                backgroundColor: "white",
+              }}
               className="me-3"
             />
-            <div>
+            <div style={{ width: "100%" }}>
               <h6 className="mb-1 fw-semibold">{achievement.title}</h6>
-              <p className="mb-2 text-muted small">
-                {achievement.shortDescription}
-              </p>
+              <div
+                className="d-flex"
+                style={{
+                  color: colors.whiteFont,
+                  justifyContent: "space-between",
+                }}
+              >
+                <p className="mb-2 small">{achievement.shortDescription}</p>
+                <p className="mb-2 small">{achievement.time}</p>
+              </div>
               <div className="d-flex flex-wrap gap-2">
                 {achievement.tags?.map((tag, idx) => (
                   <span key={idx} className="badge bg-secondary text-light">

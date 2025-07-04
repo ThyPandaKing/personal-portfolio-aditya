@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import AchievementTimeline from "../components/AchievementTimeline";
 import achievements from "../achievement_data.json"; // Assuming achievements data is in JSON format
 import colors from "../color_combo.json";
+import MajorNumbers from "../components/MajorNumbers";
 
 export default function Home() {
   const introRef = useRef(null);
@@ -23,6 +24,21 @@ export default function Home() {
       },
     },
   };
+
+  const major_numbers = [
+    {
+      title: "SOX Controls Automated",
+      number: "20",
+    },
+    {
+      title: "SOX Controls Automated",
+      number: "20",
+    },
+    {
+      title: "SOX Controls Automated",
+      number: "20",
+    },
+  ];
 
   const childVariants = {
     hidden: { opacity: 0, y: 20 },
@@ -116,6 +132,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* MAJOR NUMBERS SECTION */}
+      <MajorNumbers major_numbers={major_numbers} />
 
       <motion.h1
         className="mb-3"
