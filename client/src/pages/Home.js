@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 import profileImage from "../assets/my_image.jpg";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import "./Page.css";
@@ -7,11 +7,15 @@ import AchievementTimeline from "../components/AchievementTimeline";
 import achievements from "../achievement_data.json"; // Assuming achievements data is in JSON format
 import colors from "../color_combo.json";
 import MajorNumbers from "../components/MajorNumbers";
+import IntroCard from "../components/IntroCard";
 
 export default function Home() {
   const introRef = useRef(null);
   const { scrollY } = useScroll();
   const introInView = useInView(introRef, { once: false, amount: 0.5 });
+
+  const [imageSizeRange, setImageSizeRange] = useState(["300px", "40px"]);
+  const [imageTopRange, setImageTopRange] = useState(["120px", "10px"]);
 
   const containerVariants = {
     hidden: { opacity: 0, x: 100 },
@@ -31,12 +35,12 @@ export default function Home() {
       number: "20",
     },
     {
-      title: "SOX Controls Automated",
-      number: "20",
+      title: "Time Saved",
+      number: "2000+ hours",
     },
     {
-      title: "SOX Controls Automated",
-      number: "20",
+      title: "Productivity Increase",
+      number: "10,000+ hours",
     },
   ];
 
@@ -45,9 +49,32 @@ export default function Home() {
     show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
+  useEffect(() => {
+    const updateResponsiveValues = () => {
+      const width = window.innerWidth;
+
+      if (width < 576) {
+        // Mobile
+        setImageSizeRange(["180px", "30px"]);
+        setImageTopRange(["80px", "5px"]);
+      } else if (width < 768) {
+        // Tablet
+        setImageSizeRange(["220px", "35px"]);
+        setImageTopRange(["100px", "8px"]);
+      } else {
+        // Desktop
+        setImageSizeRange(["300px", "40px"]);
+        setImageTopRange(["120px", "10px"]);
+      }
+    };
+    updateResponsiveValues();
+    window.addEventListener("resize", updateResponsiveValues);
+    return () => window.removeEventListener("resize", updateResponsiveValues);
+  }, []);
+
   // Animate image position/opacity on scroll
-  const imageSize = useTransform(scrollY, [0, 300], ["300px", "40px"]);
-  const imageTop = useTransform(scrollY, [0, 300], ["120px", "10px"]);
+  const imageSize = useTransform(scrollY, [0, 300], imageSizeRange);
+  const imageTop = useTransform(scrollY, [0, 300], imageTopRange);
   const imageOpacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const timelineRef = useRef(null);
@@ -75,60 +102,21 @@ export default function Home() {
             </div>
 
             {/* RIGHT SIDE - Text Card */}
-            <motion.div
-              ref={introRef}
-              className="col-md-7"
-              variants={containerVariants}
-              initial="hidden"
-              animate={introInView ? "show" : "hidden"}
-            >
-              <motion.div
-                className="card p-4 shadow"
-                initial={{ scale: 0.95 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.6 }}
-              >
-                <motion.h1 className="mb-3" variants={childVariants}>
-                  Welcome!
-                </motion.h1>
+            <IntroCard
+              introRef={introRef}
+              containerVariants={containerVariants}
+              introInView={introInView}
+              childVariants={childVariants}
 
-                <motion.p className="lead" variants={childVariants}>
-                  I'm{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    Aditya Sharma
-                  </strong>
-                  , a Software Engineer and an alumnus of{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    IIT Tirupati
-                  </strong>
-                  , with a CGPA of{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    8.8
-                  </strong>
-                </motion.p>
-                <motion.p className="lead" variants={childVariants}>
-                  Full Stack Compliance Engineer at{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    ServiceNow
-                  </strong>
-                  , automating controls to achieve{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    100% compliance
-                  </strong>{" "}
-                  and saved over{" "}
-                  <strong style={{ color: colors.font, fontWeight: "bold" }}>
-                    1000+ Man Hours
-                  </strong>{" "}
-                  for control owners.
-                </motion.p>
-                <motion.p className="lead" variants={childVariants}></motion.p>
-
-                <motion.p className="lead" variants={childVariants}>
-                  Explore my projects via the{" "}
-                  <span className="text-primary">Projects</span> tab.
-                </motion.p>
-              </motion.div>
-            </motion.div>
+              style={{
+                  width: imageSize,
+                  position: "sticky",
+                  top: imageTop,
+                  boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+                  zIndex: 10,
+                  opacity: imageOpacity,
+                }}
+            />
           </div>
         </div>
       </div>
@@ -138,9 +126,9 @@ export default function Home() {
 
       <motion.h1
         className="mb-3"
-        style={{ textAlign: "center", color: colors.primary }}
+        style={{ textAlign: "center", color: colors.highlightFont }}
       >
-        Major Achievements!
+        Achievements Timeling!
       </motion.h1>
 
       {/* TIMELINE SECTION */}

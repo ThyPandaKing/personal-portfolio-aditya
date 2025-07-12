@@ -35,6 +35,7 @@ export default function MajorNumbers({ major_numbers }) {
             background: `none`,
             textAlign: "center",
             fontSize: "1.5rem",
+            marginBottom: "inherit",
           }}
         >
           <div>

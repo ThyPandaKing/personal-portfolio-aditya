@@ -18,7 +18,7 @@ const Navbar = () => {
       className="navbar navbar-expand-lg sticky-top"
       style={{
         backgroundColor: colors.primary,
-        color: colors.font,
+        color: colors.highlightFont,
       }}
     >
       <div className="container-fluid">
@@ -31,7 +31,7 @@ const Navbar = () => {
             height="35"
             className="rounded-circle"
           />
-          <span style={{ color: colors.font }}>My Portfolio</span>
+          <span style={{ color: colors.highlightFont }}>My Portfolio</span>
         </Link>
 
         {/* Toggle button */}
@@ -42,7 +42,10 @@ const Navbar = () => {
           aria-controls="navbarNav"
           aria-expanded={expanded}
           aria-label="Toggle navigation"
-          style={{ color: colors.font, backgroundColor: colors.font }}
+          style={{
+            color: colors.highlightFont,
+            backgroundColor: colors.highlightFont,
+          }}
         >
           <span className="navbar-toggler-icon"></span>
         </motion.button>
@@ -54,68 +57,96 @@ const Navbar = () => {
         >
           <motion.ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <motion.li className="nav-item">
-              <motion.a
+              <Link
                 className="nav-link"
                 to="/"
                 onClick={() => setExpanded(false)}
-                style={{ color: colors.font }}
-                whileHover={{
-                  color: colors.highlightFont,
-                  textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
-                  transition: { duration: 0.1 },
-                  textDecoration: "underline",
-                }}
               >
-                <IoMdHome className="me-1" /> Home
-              </motion.a>
+                <motion.div
+                  style={{
+                    color: colors.highlightFont,
+                    display: "flex",
+                    alignItems: "center",
+                    filter: "drop-shadow(0 0 0 rgba(0,0,0,0))", // reset base shadow
+                    transition: "filter 0.2s, color 0.2s", // optional smoothness
+                  }}
+                  whileHover={{
+                    color: "#fff",
+                    filter: "drop-shadow(0 0 4px rgba(255,255,255,0.8))",
+                  }}
+                >
+                  <IoMdHome className="me-1" /> Home
+                </motion.div>
+              </Link>
             </motion.li>
             <motion.li className="nav-item">
-              <motion.a
+              <Link
                 className="nav-link"
                 to="/projects"
                 onClick={() => setExpanded(false)}
-                style={{ color: colors.font }}
-                whileHover={{
-                  color: colors.highlightFont,
-                  textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
-                  transition: { duration: 0.1 },
-                  textDecoration: "underline",
-                }}
               >
-                <IoMdFolder className="me-1" /> Projects
-              </motion.a>
+                <motion.div
+                  style={{
+                    color: colors.highlightFont,
+                    display: "flex",
+                    alignItems: "center",
+                    filter: "drop-shadow(0 0 0 rgba(0,0,0,0))", // reset base shadow
+                    transition: "filter 0.2s, color 0.2s", // optional smoothness
+                  }}
+                  whileHover={{
+                    color: "#fff",
+                    filter: "drop-shadow(0 0 4px rgba(255,255,255,0.8))",
+                  }}
+                >
+                  <IoMdFolder className="me-1" /> Projects
+                </motion.div>
+              </Link>
             </motion.li>
             <motion.li className="nav-item">
-              <motion.a
+              <Link
                 className="nav-link"
                 to="/resume"
                 onClick={() => setExpanded(false)}
-                style={{ color: colors.font }}
-                whileHover={{
-                  color: colors.highlightFont,
-                  textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
-                  transition: { duration: 0.1 },
-                  textDecoration: "underline",
-                }}
               >
-                <IoMdDocument className="me-1" /> Resume
-              </motion.a>
+                <motion.div
+                  style={{
+                    color: colors.highlightFont,
+                    display: "flex",
+                    alignItems: "center",
+                    filter: "drop-shadow(0 0 0 rgba(0,0,0,0))", // reset base shadow
+                    transition: "filter 0.2s, color 0.2s", // optional smoothness
+                  }}
+                  whileHover={{
+                    color: "#fff",
+                    filter: "drop-shadow(0 0 4px rgba(255,255,255,0.8))",
+                  }}
+                >
+                  <IoMdDocument className="me-1" /> Resume
+                </motion.div>
+              </Link>
             </motion.li>
             <motion.li className="nav-item">
-              <motion.a
+              <Link
                 className="nav-link"
                 to="/contact"
                 onClick={() => setExpanded(false)}
-                style={{ color: colors.font }}
-                whileHover={{
-                  color: colors.highlightFont,
-                  textShadow: "0px 0px 8px rgba(255, 255, 255, 0.8)",
-                  transition: { duration: 0.1 },
-                  textDecoration: "underline",
-                }}
               >
-                <IoMdContact className="me-1" /> Contact
-              </motion.a>
+                <motion.div
+                  style={{
+                    color: colors.highlightFont,
+                    display: "flex",
+                    alignItems: "center",
+                    filter: "drop-shadow(0 0 0 rgba(0,0,0,0))", // reset base shadow
+                    transition: "filter 0.2s, color 0.2s", // optional smoothness
+                  }}
+                  whileHover={{
+                    color: "#fff",
+                    filter: "drop-shadow(0 0 4px rgba(255,255,255,0.8))",
+                  }}
+                >
+                  <IoMdContact className="me-1" /> Contact
+                </motion.div>
+              </Link>
             </motion.li>
           </motion.ul>
         </motion.div>
