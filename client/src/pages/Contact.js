@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import colors from "../color_combo.json"; // Assuming you have a color combo file
+import profileLogo from "../assets/my_icon.png";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -22,7 +23,8 @@ const Contact = () => {
     {
       label: "Email",
       value: "aditya9660sharma@gmail.com",
-      href: "mailto:aditya9660sharma@gmail.com",
+      // href: "mailto:cs19b001@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=aditya9660sharma@gmail.com&su=Contacting%20Aditya&body=Hi%20Aditya,",
       icon: <MdEmail className="fs-2 text-primary" />,
     },
     {
@@ -52,6 +54,22 @@ const Contact = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
     >
+      {/* Background Image */}
+      <div
+        style={{
+          backgroundImage: `url(${profileLogo})`,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
+          opacity: 0.3,
+          zIndex: -1,
+          height: "100%",
+          width: "100%",
+          position: "fixed",
+          top: 0,
+          left: 0,
+        }}
+      ></div>
       {/* Title */}
       <motion.h2
         className="text-center mb-5"

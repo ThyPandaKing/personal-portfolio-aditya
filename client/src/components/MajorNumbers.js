@@ -25,6 +25,9 @@ export default function MajorNumbers({ major_numbers }) {
           animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 100 }}
           transition={{ duration: 0.6 }}
           style={{
+            width: "250px", // ✅ fixed width
+            height: "150px", // ✅ fixed height
+            margin: "10px", // spacing between cards
             color: colors.highlightFont,
             borderLeftColor: colors.highlightFont,
             borderLeftWidth: "5px",
@@ -32,10 +35,12 @@ export default function MajorNumbers({ major_numbers }) {
             borderRightColor: colors.highlightFont,
             borderRightWidth: "5px",
             borderRightStyle: "solid",
-            background: `none`,
+            background: "none",
             textAlign: "center",
             fontSize: "1.5rem",
-            marginBottom: "inherit",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <div>

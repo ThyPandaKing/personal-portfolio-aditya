@@ -97,6 +97,7 @@ export default function Home() {
                   boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
                   zIndex: 10,
                   opacity: imageOpacity,
+                  
                 }}
               />
             </div>

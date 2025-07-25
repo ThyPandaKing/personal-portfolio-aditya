@@ -6,7 +6,7 @@ import {
   IoMdContact,
   IoMdFolder,
 } from "react-icons/io";
-import logo from "../assets/my_image.jpg"; // make sure the image exists
+import profileLogo from "../assets/my_icon.png";
 import colors from "../color_combo.json";
 import { motion } from "framer-motion";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
         {/* Brand with image */}
         <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
           <img
-            src={logo}
+            src={profileLogo}
             alt="Profile"
             width="35"
             height="35"
