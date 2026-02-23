@@ -16,12 +16,14 @@ function App() {
       <BackgroundImage />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/chatbot" element={<Chatbot />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/personal-portfolio-aditya/" element={<Home />} />
+          <Route path="/personal-portfolio-aditya/contact" element={<Contact />} />
+          <Route path="/personal-portfolio-aditya/projects" element={<Projects />} />
+          <Route path="/personal-portfolio-aditya/chatbot" element={<Chatbot />} />
+          <Route path="/personal-portfolio-aditya/resume" element={<Resume />} />
+          <Route path="*" element={<Home />} />
         </Routes>
+        
       </Router>
     </>
   );

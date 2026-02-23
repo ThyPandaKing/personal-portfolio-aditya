@@ -23,7 +23,7 @@ const Navbar = () => {
     >
       <div className="container-fluid">
         {/* Brand with image */}
-        <Link className="navbar-brand d-flex align-items-center gap-2" to="/">
+        <Link className="navbar-brand d-flex align-items-center gap-2" to="/personal-portfolio-aditya/">
           <img
             src={profileLogo}
             alt="Profile"
@@ -59,7 +59,7 @@ const Navbar = () => {
             <motion.li className="nav-item">
               <Link
                 className="nav-link"
-                to="/"
+                to="/personal-portfolio-aditya/"
                 onClick={() => setExpanded(false)}
               >
                 <motion.div
@@ -82,7 +82,7 @@ const Navbar = () => {
             <motion.li className="nav-item">
               <Link
                 className="nav-link"
-                to="/projects"
+                to="/personal-portfolio-aditya/projects"
                 onClick={() => setExpanded(false)}
               >
                 <motion.div
@@ -105,7 +105,7 @@ const Navbar = () => {
             <motion.li className="nav-item">
               <Link
                 className="nav-link"
-                to="/resume"
+                to="/personal-portfolio-aditya/resume"
                 onClick={() => setExpanded(false)}
               >
                 <motion.div
@@ -128,7 +128,7 @@ const Navbar = () => {
             <motion.li className="nav-item">
               <Link
                 className="nav-link"
-                to="/contact"
+                to="/personal-portfolio-aditya/contact"
                 onClick={() => setExpanded(false)}
               >
                 <motion.div
